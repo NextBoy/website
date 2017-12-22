@@ -57,6 +57,11 @@ export default new Router({
       path: '/admin/login',
       name: 'login',
       component: Login
+    },
+    {
+      path: '*',
+      redirect: '/home',
+      component: HomePage
     }
   ]
 })

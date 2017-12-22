@@ -37,7 +37,7 @@
     components: {VueEditor},
     data () {
       return {
-        admin: sessionStorage.admin,
+        admin: sessionStorage.jhEduAdmin,
         formData: {
           type: '',
           tittle: '',
@@ -50,7 +50,8 @@
     },
     methods: {
       exitLogin () {
-        sessionStorage.removeItem('admin')
+        sessionStorage.removeItem('jhEduAdmin')
+        sessionStorage.removeItem('token')
         this.$router.replace({
           path: '/admin/login'
         })

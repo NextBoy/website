@@ -26,6 +26,7 @@
   export default {
     data () {
       return {
+        admin: sessionStorage.jhEduAdmin,
         tableData: [{
           type: '大标题',
           title: '小标题',
@@ -50,7 +51,7 @@
       }
     },
     created () {
-      if (sessionStorage.admin && sessionStorage.token) {
+      if (sessionStorage.jhEduAdmin && sessionStorage.token) {
         this.getData()
       } else {
         this.$router.replace({
@@ -69,7 +70,8 @@
       deleteNews () {
       },
       exitLogin () {
-        sessionStorage.removeItem('admin')
+        sessionStorage.removeItem('jhEduAdmin')
+        sessionStorage.removeItem('token')
         this.$router.replace({
           path: '/admin/login'
         })

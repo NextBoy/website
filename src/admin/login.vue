@@ -12,11 +12,18 @@
 </template>
 <script>
   export default {
+    created () {
+      if (sessionStorage.jhEduAdmin && sessionStorage.token) {
+        this.$router.replace({
+          path: '/admin'
+        })
+      }
+    },
     methods: {
       loginCheck () {
         let res = true
         if (res === true) {
-          sessionStorage.admin = '喵仔'
+          sessionStorage.jhEduAdmin = '喵仔'
           sessionStorage.token = '123token'
           this.$router.replace({
             path: '/admin'
@@ -133,7 +140,6 @@
   html {
     width: 100%;
     height: 100%;
-    overflow: hidden;
   }
 
   .login-div {
