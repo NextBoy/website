@@ -10,14 +10,16 @@
     </div>
     <!--公司介绍-->
     <div class="show show-1">
-      <h1>菁华自招</h1>
+      <div class="cover"></div>
+      <h1>&nbsp;</h1>
       <el-button type="primary" class="btn">
         <router-link to="/company" style="color: white">公司介绍</router-link>
       </el-button>
     </div>
     <!--课程详情-->
     <div class="show show-2">
-      <h1>菁华自招</h1>
+      <div class="cover"></div>
+      <h1>&nbsp;</h1>
       <el-button type="primary">
         <router-link to="/service" style="color: white">课程详情</router-link>
       </el-button>
@@ -35,6 +37,7 @@
     </div>
     <!--加入我们-->
     <div class="show show-3">
+      <div class="cover"></div>
       <h1>菁华自招</h1>
       <el-button type="primary">
         <router-link to="/joinUs" style="color: white">加入我们</router-link>
@@ -43,15 +46,12 @@
   </div>
 </template>
 <script>
+  import banner from '@/assets/images/u0.png'
   export default {
     data () {
       return {
           // 轮播图图片地址
-        imgSrc: [
-          'http://placehold.it/500x500',
-          'http://placehold.it/500x500',
-          'http://placehold.it/500x500',
-          'http://placehold.it/500x500']
+        imgSrc: [banner, banner]
       }
     }
   }
@@ -79,6 +79,7 @@
   }
 
   .show {
+    position: relative;
     width: 85%;
     height: 400px;
     margin: 10px auto;
@@ -98,11 +99,21 @@
 
   .show-1 {
     /*公司介绍背景图*/
+    background: url(./../assets/images/u46.png)  no-repeat;
+    background-size: 100% 100%;
+    background-color: yellowgreen;
+  }
+  .show-2 {
+    /*公司介绍背景图*/
+    background: url(./../assets/images/u44.png)  no-repeat;
+    background-size: 100% 100%;
     background-color: yellowgreen;
   }
 
   .show-3 {
     /*加入我们背景图*/
+    background: url(./../assets/images/u2.png)  no-repeat;
+    background-size: 100% 100%;
     background-color: yellowgreen;
   }
 
@@ -124,7 +135,7 @@
   .show-2 .item div {
     width: 32%;
     border-radius: 5px;
-    background-color: #0074D9;
+    /*background-color: #0074D9;*/
   }
 
   .show-2 .item h2 {
@@ -143,4 +154,21 @@
   .show .item .item-3 {
   }
 
+  /*蒙层*/
+  .cover {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .show:hover .cover {
+    display: none;
+  }
+  a {
+    position: relative;
+    z-index: 100;
+  }
 </style>

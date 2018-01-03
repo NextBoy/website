@@ -1,31 +1,100 @@
 <template>
   <div class="joinUs">
     <div class="head">
-      <img class="head-img" src="http://placehold.it/800x350" alt="">
-      <p class="head-describe">一段陈述</p>
+      <img class="head-img" src="../assets/images/u99.png" alt="">
+      <p class="head-describe">脚踏实地，真诚服务。我们的目标，是星辰大海。</p>
     </div>
     <div class="invitation">
       <h1 class="invitation-head">招募人马</h1>
       <div class="invitation-detail">
         <div class="invitation-item">
           <h2 class="job">物理讲师</h2>
-          <p class="job-describe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+          <p class="job-describe">
+            所属部门：教研组<br/>
+            职位类别：讲师<br/>
+            工作职责：<br/>
+            - 根据当年校内大一物理讲师思考题出题方向及校内信息更新线上线下教案。<br/>
+            - 接受组织教研组培训，成为一名合格的物理讲师。<br/>
+            - 根据教研组安排按时保质完成授课。<br/>
+            <br/>
+            职责要求：<br/>
+            - 物理成绩优秀，有良好的物理思维。<br/>
+            - 口头表达流畅，富有表达力。<br/>
+            - 高中参加过物理竞赛的同学优先。<br/>
+          </p>
         </div>
         <div class="invitation-item">
-          <h2 class="job">物理讲师</h2>
-          <p class="job-describe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+          <h2 class="job">数学讲师</h2>
+          <p class="job-describe">
+            所属部门：教研组<br/>
+            职位类别：讲师<br/>
+            工作职责：<br/>
+            - 根据当年校内大一数学讲师思考题出题方向及校内信息更新线上线下教案。<br/>
+            - 接受组织教研组培训，成为一名合格的数学讲师。<br/>
+            - 根据教研组安排按时保质完成授课。<br/>
+            <br/>
+            职责要求：<br/>
+            - 数学成绩优秀，有良好的数学思维。<br/>
+            - 口头表达流畅，富有表达力。<br/>
+            - 高中参加过数学竞赛的同学优先。<br/>
+          </p>
         </div>
         <div class="invitation-item">
-          <h2 class="job">物理讲师</h2>
-          <p class="job-describe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+          <h2 class="job">面试讲师</h2>
+          <p class="job-describe">
+            所属部门：教研组<br/>
+            职位类别：讲师<br/>
+            工作职责：<br/>
+            - 根据当年社会时事热点及校内信息更新线上线下教案。<br/>
+            - 接受组织教研组培训，成为一名合格的数学讲师。<br/>
+            - 根据教研组安排按时保质完成授课。<br/>
+            <br/>
+            职责要求：<br/>
+            - 自招面试成绩优秀，有群面经验技巧。<br/>
+            - 口头表达精彩，富有表达力，善于沟通。<br/>
+            - 有组织工作或辩论经验的同学优先。<br/>
+          </p>
         </div>
         <div class="invitation-item">
-          <h2 class="job">物理讲师</h2>
-          <p class="job-describe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+          <h2 class="job">宣传策划&执行</h2>
+          <p class="job-describe">
+            所属部门：运营组<br/>
+            职位类别：策划&执行<br/>
+            工作职责：<br/>
+            - 根据当年校内校外趋势，公司当前发展状况制定当年的宣传策略计划。<br/>
+            - 在运营活动繁重时，可以加入执行运营事务。<br/>
+            - 负责执行当年的线下宣传。<br/>
+            - 负责当年宣传所需文档海报视频等，可交予可靠第三方完成。<br/>
+            <br/>
+            职责要求：<br/>
+            - 具有宣传组织事务经验。<br/>
+            - 具有审美，具备制作PPT海报等宣传物的能力。<br/>
+            - 具有组织宣传部工作的同学优先。
+                      </p>
         </div>
         <div class="invitation-item">
-          <h2 class="job">物理讲师</h2>
-          <p class="job-describe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+          <h2 class="job">运营策划&执行</h2>
+          <p class="job-describe">
+            所属部门：运营组<br>
+            职位类别：策划&执行<br>
+            工作职责：<br>
+            - 根据当年校内校外趋势，公司当前发展状况制定当年的运营策略计划。<br>
+            - 负责团队多群的运营工作，保证群的正常运转，保持与学生家长的良好互动。<br>
+            - 负责组织安排并执行当年的线下授课线上授课。<br>
+            <br>
+            职责要求：<br>
+            - 具有运营组织事务经验。<br>
+            - 口头表达流畅，富有表达力。<br>
+            - 热爱互联网的同学优先。<br>
+          </p>
+        </div>
+        <div class="invitation-item">
+          <h2 class="job">公司招聘邮箱</h2>
+          <p class="job-describe" style="text-align: center">
+          <span style="font-weight: bold; text-align: center">zsyolia@gmail.com</span>
+            <br/>
+            发送你的简历和故事到邮箱，<br/>工作人员将尽快回复。<br/>我们期待你的加入！
+          </p>
         </div>
       </div>
     </div>
@@ -33,7 +102,11 @@
       <h1 class="hands-title">寻求合作</h1>
       <div class="detail">
         <h2 class="detail-title">川渝高校负责人</h2>
-        <p class="detail-describe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida </p>
+        <div class="detail-describe">
+          菁华团队还在不断壮大中！我们愿意将我们成型的管理组织经验运用在更多川渝名校之中。
+如果你是川渝高校学生，并且你的学校也在组织自主招生考试，那么请联系我们，也许你就是我们的下一位川渝高校负责人！
+<p style="font-weight: bold">联系邮箱：zsyolia@gmail.com</p>
+        </div>
       </div>
     </div>
   </div>
@@ -45,53 +118,70 @@
   .joinUs .head {
     width: 100%;
   }
+
   .head .head-img {
     width: 100%;
     height: 350px;
   }
+
   .head .head-describe {
     text-align: center;
+    font-weight: bold;
+    font-size: 20px;
   }
+
   .joinUs .invitation {
     width: 80%;
-    margin:  20px auto;
+    margin: 20px auto;
   }
+
   .invitation .invitation-head {
     text-align: center;
     font-weight: bold;
     font-size: 30px;
     border-bottom: 2px solid black;
   }
+
   .invitation .invitation-detail {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
+
   .invitation-detail .invitation-item {
     width: 30%;
   }
+
   .invitation-item .job {
     text-align: center;
     font-weight: bold;
     font-size: 23px;
   }
+
   .hands {
     width: 80%;
     margin: 20px auto;
   }
+
   .hands .hands-title {
     text-align: center;
     font-weight: bold;
     font-size: 30px;
     border-bottom: 2px solid black;
   }
+
   .hands .detail {
     width: 30%;
     margin: 20px auto;
+    font-size: 17px;
   }
+
   .hands .detail .detail-title {
     text-align: center;
     font-weight: bold;
     font-size: 23px;
+  }
+  .job-describe {
+    font-size: 16px;
   }
 </style>

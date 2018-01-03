@@ -1,23 +1,23 @@
 <template>
   <footer  class="edu-footer">
     <dl>
-      <dt>关于我们</dt>
-      <dd>列表内容</dd>
-      <dd>列表内容</dd>
+      <dt>关注我们</dt>
+      <dd>微信</dd>
+      <dd>QQ</dd>
     </dl>
     <dl>
       <dt>联系我们</dt>
-      <dd>列表内容</dd>
-      <dd>列表内容</dd>
+      <dd>合作洽谈</dd>
+      <dd>联系方式</dd>
     </dl>
     <dl>
       <dt>法律信息</dt>
-      <dd>列表内容</dd>
-      <dd>列表内容</dd>
+      <dd>知识产权</dd>
+      <dd>公司信息</dd>
     </dl>
     <dl>
-      <dt>微信关注</dt>
-      <dd><img src="http://placehold.it/110x110" alt=""></dd>
+      <dt>QQ扫码加群</dt>
+      <dd><img src="../../assets/images/u73.png" alt="" style="width: 100px"></dd>
     </dl>
   </footer>
 </template>
