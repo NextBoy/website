@@ -13,7 +13,7 @@
       <div class="cover"></div>
       <h1>&nbsp;</h1>
       <el-button type="primary" class="btn">
-        <router-link to="/company" style="color: white">公司介绍</router-link>
+        <router-link to="/company" style="color: white;">公司介绍</router-link>
       </el-button>
     </div>
     <!--课程详情-->
@@ -57,6 +57,10 @@
   }
 </script>
 <style scoped>
+  .block {
+    width: 85%;
+    margin: 0 auto;
+  }
   .el-carousel__item h3 {
     color: #475669;
     font-size: 14px;
@@ -162,13 +166,17 @@
     height: 100%;
     position: absolute;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.5);
   }
-  .show:hover .cover {
-    display: none;
-  }
-  a {
-    position: relative;
-    z-index: 100;
+  .el-button {
+    width: 140px;
+    height: 56px;
+    font-size: 22px;
+    position: absolute;
+    z-index: 20;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+
   }
 </style>

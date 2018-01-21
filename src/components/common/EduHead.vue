@@ -22,22 +22,35 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 50px;
+    height: 70px;
     padding: 0 100px;
     line-height: 50px;
     background: rgb(248, 248, 248);
+    margin-bottom: 30px;
   }
   .common-head .logo-title{
     display: inline-block;
-    font-size: 25px;
+    font-size: 32px;
     font-weight: bold;
   }
   .common-head h2 {
     display: inline-block;
+    font-size: 20px;
+    height: 70px;
+    font-weight: bold;
+    line-height: 70px;
   }
   .common-head .page-link .link{
     display: inline-block;
-    width: 80px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 120px;
+    height: 70px;
+    line-height: 70px;
     text-align: center;
+  }
+  .router-link-active {
+    background-color: rgb(223, 223, 223);
+    color: black;
   }
 </style>

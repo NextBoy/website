@@ -40,9 +40,13 @@
   export default {}
 </script>
 <style scoped>
+  .company .company-head {
+    text-align: center;
+    margin: 20px auto;
+  }
   .company .company-head img {
-    width: 100%;
-    height: 350px;
+    height: 400px;
+    padding-bottom: 50px;
   }
   .company .company-head .describe {
     text-align: center;
@@ -57,7 +61,8 @@
   }
   .company .company-item .item-head {
     text-align: center;
-    font-size: 25px;
+    font-size: 32px;
+    padding: 20px 0;
     font-weight: bold;
   }
   .company .img-div {
@@ -68,5 +73,7 @@
     /*width: 430px;
     height: 200px;*/
   }
-
+  .item-detail {
+    font-size: 20px;
+  }
 </style>

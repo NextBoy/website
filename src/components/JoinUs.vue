@@ -2,7 +2,9 @@
   <div class="joinUs">
     <div class="head">
       <img class="head-img" src="../assets/images/u99.png" alt="">
-      <p class="head-describe">脚踏实地，真诚服务。我们的目标，是星辰大海。</p>
+      <p class="head-describe">
+        菁华团队相聚于成电，壮大于成电，从这里出生，也在这里成长。怀抱着对学员的责任，对母校的热爱，我们对业务精益求精，对服务一丝不苟，不断地打磨教案，演练课程，从第一年手写的培训稿，到今天成型课程教案；从第一年的线下培训，到今天线上线下双管齐下；从第一年的几人团队，到今天初创公司。每一年的丰硕成果都在鼓励着我们，我们一步一步，脚踏实地，相信只要认真负责，不忘初心，平凡的我们也能做出非凡的事业！在这里你可以和一群优秀的人一起，每个人既是决策者又是执行者，感受团队合作的快乐，能力和素质得到提升。我们期待着优秀的你加入我们。
+      </p>
     </div>
     <div class="invitation">
       <h1 class="invitation-head">招募人马</h1>
@@ -116,7 +118,8 @@
 </script>
 <style scoped>
   .joinUs .head {
-    width: 100%;
+    width: 85%;
+    margin: 20px auto;
   }
 
   .head .head-img {
@@ -125,11 +128,13 @@
   }
 
   .head .head-describe {
-    text-align: center;
-    font-weight: bold;
+    width: 80%;
+    margin: 10px auto;
     font-size: 20px;
   }
-
+  .invitation-item {
+    padding: 30px;
+  }
   .joinUs .invitation {
     width: 80%;
     margin: 20px auto;
@@ -160,7 +165,7 @@
 
   .hands {
     width: 80%;
-    margin: 20px auto;
+    margin: 30px auto;
   }
 
   .hands .hands-title {
@@ -180,6 +185,7 @@
     text-align: center;
     font-weight: bold;
     font-size: 23px;
+    padding-bottom: 20px;
   }
   .job-describe {
     font-size: 16px;

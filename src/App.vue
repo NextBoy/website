@@ -11,7 +11,10 @@
   import Foot from './components/common/Foot.vue'
   export default {
     name: 'app',
-    components: {EduHead, Foot}
+    components: {EduHead, Foot},
+    mounted () {
+      document.title = '菁华成长自招'
+    }
   }
 </script>
 

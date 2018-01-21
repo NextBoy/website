@@ -3,7 +3,7 @@
     <div class="service-head">
       <p>更多服务详情，加入官方电子科大自招群：453817356</p>
       <p>扫描二维码加入QQ群，为您提供独家资讯</p>
-      <img src="../assets/images/u73.png" alt="二维码" title="扫码关注" style="width: 70px">
+      <img src="../assets/images/u73.png" alt="二维码" title="扫码关注">
     </div>
     <div class="service-describe">
       <div class="describe-item">
@@ -63,16 +63,23 @@
   }
 
   .service .service-head {
+    position: relative;
     width: 760px;
-    height: 125px;
+    height: 100px;
     background-color: rgb(245, 245, 245);
     text-align: center;
-    padding-top: 10px;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 4px;
     font-size: 13px;
+    padding-top: 30px;
   }
-
+  .service-head img {
+    width: 75px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 100px;
+  }
   .service .service-describe {
     width: 1000px;
     overflow: hidden;
