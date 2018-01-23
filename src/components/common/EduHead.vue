@@ -6,7 +6,7 @@
     </div>
     <nav class="page-link">
       <router-link to="/home" class = 'link'>主页</router-link>
-      <router-link to="/newsflash" class = 'link'  style="display: none">自招简讯</router-link>
+      <router-link to="/newsflash" class = 'link'>自招简讯</router-link>
       <router-link to="/company" class = 'link'>公司介绍</router-link>
       <router-link to="/service" class = 'link'>服务介绍</router-link>
       <router-link to="/joinUs" class = 'link'>加入我们</router-link>
@@ -52,5 +52,15 @@
   .router-link-active {
     background-color: rgb(223, 223, 223);
     color: black;
+  }
+  @media screen and (max-width:1250px){
+    .common-head {
+      padding: 0 20px;
+    }
+    .common-head .page-link .link {
+      width: 80px;
+      font-size: 14px;
+    }
+
   }
 </style>

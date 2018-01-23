@@ -1,6 +1,10 @@
 <template>
   <div class="newsflash">
     <div class="news-list">
+      <div class="search-div">
+        <el-input placeholder="请输入搜索内容" style="width: 350px"></el-input>
+        <el-button type="text"><i class="el-icon-search" style="color: black; font-size: 30px"></i></el-button>
+      </div>
       <div class="news-item" v-for="(item, index) in newList" :key="index">
         <h2 class="type">{{ item.type }}</h2>
         <h3 class="title">{{ item.title }}</h3>
@@ -28,7 +32,7 @@
         @current-change="handleCurrentChange"
         :current-page="currentPage"
         :page-sizes="[5, 10, 15, 20]"
-        :page-size="100"
+        :page-size="pageSize"
         layout="total, sizes, prev, pager, next, jumper"
         :total="total">
       </el-pagination>
@@ -37,11 +41,12 @@
       <p>现在加入官方QQ群，获得更多情报！</p>
       <p>电子科大自招群</p>
       <p>扫描下方二维码关注公众号，为您提供独家资讯</p>
-      <img src="http://placehold.it/100x100" alt="" class="quickMark">
+      <img src="../assets/images/weixin.png" alt="" class="quickMark">
     </div>
   </div>
 </template>
 <script>
+  import {getArticle, editArticle} from '../api/index'
   export default {
     data () {
       return {
@@ -70,16 +75,29 @@
         showStatus: [],  // 展示收起栏状态
         hasLike: [],  // 是否点赞了
         currentPage: 1,  // 页码
+        pageSize: 5,
         total: 50  // 条数
       }
     },
     created () {
       this.getData()
     },
+    mounted () {
+      document.body.scrollTop = 0
+    },
     methods: {
       // 获取数据
       getData () {
         let self = this
+        let dataJson = {
+          pageNum: self.currentPage,
+          pageSize: self.pageSize
+        }
+        getArticle(dataJson)
+          .then(res => {
+            self.newList = res.data
+            self.total = res.total
+          })
         // self.newList = [1, 2, 3]
         self.newList.forEach(() => {
           self.showStatus.push(true)
@@ -93,25 +111,41 @@
       // 点赞
       addLike (index) {
         if (!this.hasLike[index]) {
-          this.newList[index].likeCount ++
+          editArticle({
+            id: this.newList[index].id,
+            likeCount: this.newList[index].likeCount + 1
+          })
+            .then(res => {
+              console.log(res)
+            })
+          this.newList[index].likeCount++
           // 补充点赞的数据库操作
           this.hasLike.splice(index, 1, true)
         }
       },
       // 改变页大小
       handleSizeChange (val) {
+        this.pageSize = val
+        this.getData()
         console.log(`每页 ${val} 条`)
       },
       // 改变页码
       handleCurrentChange (val) {
+        this.currentPage = val
+        this.getData()
         console.log(`当前页: ${val}`)
       }
     }
   }
 </script>
 <style scoped>
+  .newsflash {
+    position: relative;
+    min-height: 80vh;
+  }
+
   .newsflash .news-list {
-    width: 60%;
+    width: 50%;
     margin: 30px 80px;
   }
 
@@ -167,18 +201,24 @@
   }
 
   .block {
-    position: fixed;
+    position: absolute;
     right: 10%;
     top: 20%;
-    width: 340px;
-    background-color: #c2c2bd;
+    width: 310px;
+    height: 160px;
+    font-size: 12px;
+    background-color: rgb(232, 232, 232);
     padding: 10px 15px;
     text-align: center;
   }
 
-  .block  .quickMark{
+  .block .quickMark {
     margin: 10px auto;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
+  }
+
+  i:hover {
+    cursor: pointer;
   }
 </style>

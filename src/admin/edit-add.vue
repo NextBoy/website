@@ -26,7 +26,7 @@
         </el-date-picker>
       </el-form-item>
       <vue-editor v-model="formData.main" class="vue-editor"></vue-editor>
-      <el-button type="success" class="btn">确认</el-button>
+      <el-button type="success" class="btn" @click="cos()">确认</el-button>
     </el-form>
   </div>
 </template>
@@ -55,6 +55,9 @@
         this.$router.replace({
           path: '/admin/login'
         })
+      },
+      cos () {
+        console.log(this.formData.main)
       }
     }
   }

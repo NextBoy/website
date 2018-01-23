@@ -54,7 +54,11 @@
   </div>
 </template>
 <script>
-  export default {}
+  export default {
+    mounted () {
+      document.body.scrollTop = 0
+    }
+  }
 </script>
 <style scoped>
   .service {

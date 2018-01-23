@@ -20,9 +20,20 @@
         </template>
       </el-table-column>
     </el-table>
+    <el-pagination
+      class="pagination"
+      @size-change="handleSizeChange"
+      @current-change="handleCurrentChange"
+      :current-page="currentPage"
+      :page-sizes="[5, 10, 15, 20]"
+      :page-size="pageSize"
+      layout="total, sizes, prev, pager, next, jumper"
+      :total="total">
+    </el-pagination>
   </div>
 </template>
 <script>
+  import {getArticle} from '../api/index'
   export default {
     data () {
       return {
@@ -47,7 +58,10 @@
           likeCount: '点赞数',
           viewCount: '阅读量',
           createDate: '发布日期'
-        }
+        },
+        currentPage: 1,  // 页码
+        pageSize: 5,
+        total: 50  // 条数
       }
     },
     created () {
@@ -62,6 +76,21 @@
     methods: {
       // 获取数据
       getData () {
+        let self = this
+        let dataJson = {
+          pageNum: self.currentPage,
+          pageSize: self.pageSize
+        }
+        getArticle(dataJson)
+          .then(res => {
+            self.tableData = res.data
+            self.total = res.total
+          })
+        // self.newList = [1, 2, 3]
+        self.newList.forEach(() => {
+          self.showStatus.push(true)
+          self.hasLike.push(false)
+        })
       },
       // 执行查询
       doQuery () {
@@ -75,6 +104,19 @@
         this.$router.replace({
           path: '/admin/login'
         })
+      },
+
+      // 改变页大小
+      handleSizeChange (val) {
+        this.pageSize = val
+        this.getData()
+        console.log(`每页 ${val} 条`)
+      },
+      // 改变页码
+      handleCurrentChange (val) {
+        this.currentPage = val
+        this.getData()
+        console.log(`当前页: ${val}`)
       }
     }
   }

@@ -53,6 +53,9 @@
           // 轮播图图片地址
         imgSrc: [banner, banner]
       }
+    },
+    mounted () {
+      document.body.scrollTop = 0
     }
   }
 </script>

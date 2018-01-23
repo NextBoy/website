@@ -2,16 +2,18 @@
   <footer  class="edu-footer">
     <dl>
       <dt>关注我们</dt>
-      <dd><img src="../../assets/images/icon.png" alt="微信">微信</dd>
+      <dd class="weixin"><img src="../../assets/images/icon.png" alt="微信">
+        <img src="../../assets/images/weixin.png" class="weixinhover">
+        微信</dd>
       <dd class="QQ">
         <img src="../../assets/images/icon.png" alt="QQ">
         <img src="../../assets/images/QQhover.png" class="QQhover">
         QQ</dd>
     </dl>
-    <dl>
-      <dt>联系我们</dt>
-      <dd>合作洽谈</dd>
-      <dd>联系方式</dd>
+    <dl style="cursor: pointer">
+      <dt title="手机号13880017579">联系我们</dt>
+      <dd title="手机号13880017579">合作洽谈</dd>
+      <dd title="手机号13880017579">联系方式</dd>
     </dl>
     <dl>
       <dt>法律信息</dt>
@@ -44,10 +46,10 @@
   .edu-footer dl dt {
     font-weight: bold;
   }
-  .QQ {
+  .QQ, .weixin {
     position: relative;
   }
-  .QQhover {
+  .QQhover, .weixinhover {
     position: absolute;
     width: 200px;
     right: -10px;
@@ -55,6 +57,9 @@
     display: none;
   }
   .QQ:hover .QQhover {
+    display: block;
+  }
+  .weixin:hover .weixinhover {
     display: block;
   }
 </style>
